@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Coolizi EU — Launch Dossier &amp; Decision Brief</title>
+<style>
+  :root{
+    --bg:#0a0e14; --bg2:#0f141d; --card:#141b26; --card2:#1a2330;
+    --line:#243042; --txt:#dfe7f1; --mut:#8a98ad; --acc:#22d3a8; --acc2:#3b9dff;
+    --warn:#ffb020; --bad:#ff5d6c; --good:#34d399; --pill:#1d2735;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:linear-gradient(180deg,#080b10,#0a0e14 40%);color:var(--txt);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  a{color:var(--acc2);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:264px 1fr;gap:34px}
+  header.hero{background:radial-gradient(1200px 400px at 20% -10%,rgba(34,211,168,.18),transparent),
+    radial-gradient(900px 360px at 90% 0%,rgba(59,157,255,.14),transparent),#0a0e14;
+    border-bottom:1px solid var(--line);padding:50px 20px 38px}
+  header.hero .inner{max-width:1180px;margin:0 auto}
+  .kick{display:inline-block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
+    border:1px solid var(--line);background:var(--pill);padding:6px 12px;border-radius:999px;margin-bottom:16px}
+  h1{font-size:36px;line-height:1.12;margin:0 0 12px;letter-spacing:-.02em}
+  h1 .g{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--mut);font-size:18px;max-width:780px}
+  .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
+  .meta span{font-size:12.5px;color:var(--mut);background:var(--card);border:1px solid var(--line);padding:5px 11px;border-radius:8px}
+  nav.toc{position:sticky;top:18px;align-self:start;max-height:calc(100vh - 36px);overflow:auto;
+    background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 14px;font-size:14px}
+  nav.toc h4{margin:4px 6px 10px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
+  nav.toc a{display:block;color:var(--txt);padding:7px 10px;border-radius:8px;margin-bottom:2px;border:1px solid transparent}
+  nav.toc a:hover{background:var(--card2);text-decoration:none;border-color:var(--line)}
+  nav.toc a .n{color:var(--acc);font-variant-numeric:tabular-nums;margin-right:8px;font-size:12px}
+  main{min-width:0;padding-bottom:80px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 28px;margin:22px 0}
+  h2{font-size:25px;margin:0 0 6px;letter-spacing:-.01em;scroll-margin-top:20px}
+  h2 .num{color:var(--acc);font-size:15px;font-weight:600;margin-right:10px;vertical-align:middle}
+  h3{font-size:17.5px;margin:24px 0 8px;color:#eaf1fb}
+  p{margin:10px 0} .lead{font-size:17px;color:#cdd8e6}
+  ul,ol{margin:10px 0 10px 4px;padding-left:22px} li{margin:6px 0}
+  .grid{display:grid;gap:14px} .g2{grid-template-columns:1fr 1fr} .g3{grid-template-columns:1fr 1fr 1fr} .g4{grid-template-columns:repeat(4,1fr)}
+  .box{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .box h4{margin:0 0 6px;font-size:14px;letter-spacing:.04em} .box p{margin:4px 0;font-size:14px;color:var(--mut)}
+  .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.05em;padding:3px 9px;border-radius:6px;vertical-align:middle}
+  .t-good{background:rgba(52,211,153,.14);color:var(--good);border:1px solid rgba(52,211,153,.3)}
+  .t-warn{background:rgba(255,176,32,.14);color:var(--warn);border:1px solid rgba(255,176,32,.32)}
+  .t-bad{background:rgba(255,93,108,.14);color:var(--bad);border:1px solid rgba(255,93,108,.32)}
+  .t-neu{background:var(--pill);color:var(--mut);border:1px solid var(--line)}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px}
+  th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--mut);font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+  tr:hover td{background:rgba(255,255,255,.015)}
+  code,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px}
+  code{background:#0c1118;border:1px solid var(--line);padding:2px 6px;border-radius:5px;color:#9fe7d3}
+  pre{background:#0c1118;border:1px solid var(--line);border-radius:10px;padding:14px 16px;overflow:auto;font-size:12.5px;line-height:1.5}
+  pre code{background:none;border:0;padding:0;color:#cfe8df}
+  .callout{border-left:3px solid var(--acc);background:linear-gradient(90deg,rgba(34,211,168,.07),transparent);
+    padding:12px 16px;border-radius:0 10px 10px 0;margin:14px 0}
+  .callout.warn{border-color:var(--warn);background:linear-gradient(90deg,rgba(255,176,32,.08),transparent)}
+  .callout.bad{border-color:var(--bad);background:linear-gradient(90deg,rgba(255,93,108,.08),transparent)}
+  .kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:8px 0 2px}
+  .kpi .k{background:linear-gradient(180deg,var(--card2),#121925);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .kpi .k b{display:block;font-size:24px;color:#fff;letter-spacing:-.02em}
+  .kpi .k span{font-size:12.5px;color:var(--mut)}
+  .pill{display:inline-block;background:var(--pill);border:1px solid var(--line);color:var(--mut);font-size:12px;padding:3px 9px;border-radius:999px;margin:2px 4px 2px 0}
+  .chk{color:var(--good);font-weight:700} .crs{color:var(--bad);font-weight:700}
+  .foot{color:var(--mut);font-size:13px;text-align:center;padding:30px 20px 50px}
+  .decision{background:linear-gradient(180deg,rgba(255,176,32,.07),var(--card2));border:1px solid rgba(255,176,32,.3)}
+  .num-big{font-size:20px;font-weight:800;color:var(--bad);min-width:30px;display:inline-block}
+  @media(max-width:900px){.wrap{grid-template-columns:1fr}.g2,.g3,.g4,.kpi{grid-template-columns:1fr}nav.toc{display:none}h1{font-size:28px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="inner">
+    <span class="kick">Internal · Confidential · Coolizi Portable AC · trycoolizi.com</span>
+    <h1>Launch Dossier &amp; <span class="g">Decision Brief</span></h1>
+    <p class="sub">Everything you need to make the call: the Cloudflare verdict, the realistic phased plan to 50 conv/day, the unit-economics that decide which geos & channels to fund, and a ruthless red-team pass that found the three things that quietly kill launches like this.</p>
+    <div class="meta">
+      <span>📅 26 Jun 2026</span>
+      <span>🎯 50 conv/day combined</span>
+      <span>💶 $105 EU / $115 UK CPA</span>
+      <span>🔎 Research: <a href="case-study.html">case-study.html →</a></span>
+      <span>✅ 5-agent workflow + red-team verified</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+<nav class="toc">
+  <h4>Contents</h4>
+  <a href="#answers"><span class="n">00</span>Your 3 questions, answered</a>
+  <a href="#cloudflare"><span class="n">01</span>Cloudflare — yes, here's why</a>
+  <a href="#setup"><span class="n">02</span>Exact CF setup</a>
+  <a href="#economics"><span class="n">03</span>The economics (the real gate)</a>
+  <a href="#geo"><span class="n">04</span>Which geos to fund first</a>
+  <a href="#channels"><span class="n">05</span>Traffic channels</a>
+  <a href="#plan"><span class="n">06</span>Phased plan + timeline</a>
+  <a href="#redteam"><span class="n">07</span>Red-team: 3 killers</a>
+  <a href="#decisions"><span class="n">08</span>Decisions I need from you</a>
+</nav>
+
+<main>
+
+<!-- 00 -->
+<section id="answers">
+  <h2><span class="num">00</span>Your three questions, answered</h2>
+  <div class="grid g3" style="margin-top:6px">
+    <div class="box"><h4>① Where do I check the research?</h4>
+      <p style="color:#cdd8e6"><b>This page is the live home for it.</b> The deep competitor teardown is one click away at <a href="case-study.html">case-study.html</a>. Both are noindex + robots-blocked so Google/competitors won't find them. Source repo is private; I can pull this live URL down the moment you're done studying.</p></div>
+    <div class="box"><h4>② What's the plan ahead?</h4>
+      <p style="color:#cdd8e6"><b>§06.</b> A 4-phase build → index → paid-ramp → scale plan with dated milestones. Honest version: 50/day is a <b>mid-to-late-August</b> target, paid-led, not an early-August certainty. Organic compounds underneath but won't carry the number this season.</p></div>
+    <div class="box"><h4>③ Cloudflare — yes or no?</h4>
+      <p style="color:#cdd8e6"><b>Yes — §01/§02.</b> Not for speed/SSL (GitHub already has those) but because CF gives you free <b>edge geo-routing</b> and <b>visitor country/city</b> — which auto-sends each visitor to their language page and powers the ticker with zero third-party API.</p></div>
+  </div>
+  <div class="callout"><b>The one-line strategic truth:</b> hitting 50/day is a <b>paid-media + conversion-rate problem</b>, not an SEO problem. The localized pages + ticker raise CR; paid traffic (Native first, Meta as a scale lever) delivers the volume; organic + the special-char/CTR work lower blended cost over time. Build it to <i>look like the reviews Google keeps</i>, fund the geos with the best click economics, and budget on <b>net</b> (post-refund) payout.</div>
+</section>
+
+<!-- 01 -->
+<section id="cloudflare">
+  <h2><span class="num">01</span>Cloudflare: yes — and host on Cloudflare Pages</h2>
+  <p class="lead">Verdict: <b>put trycoolizi.com on Cloudflare</b>, and prefer <b>Cloudflare Pages</b> (sourced from your GitHub repo) over GitHub Pages.</p>
+  <p>GitHub Pages already gives you a CDN (Fastly) and free SSL, so those aren't the reason. The reason is one capability GitHub structurally <b>cannot</b> provide:</p>
+  <table>
+    <tr><th>Capability</th><th>GitHub Pages alone</th><th>What Cloudflare adds</th><th>Worth it?</th></tr>
+    <tr><td><b>Edge geo data (country/city)</b></td><td class="crs">Impossible</td><td><code>CF-IPCountry</code> header + <code>request.cf</code> in a Worker/Function</td><td><span class="tag t-good">THE reason</span></td></tr>
+    <tr><td><b>Edge geo-routing</b> (root → /de)</td><td class="crs">Impossible</td><td>302 at the edge before the page loads</td><td><span class="tag t-good">Major</span></td></tr>
+    <tr><td>Free cookieless analytics</td><td class="crs">None</td><td>Server-side, adblocker-proof, no cookie banner</td><td><span class="tag t-good">Strong</span></td></tr>
+    <tr><td>Bandwidth</td><td>100 GB/mo soft limit</td><td>CF Pages = unlimited free (you've hit GH limits before)</td><td><span class="tag t-good">Strong</span></td></tr>
+    <tr><td>CDN / EU TTFB · SSL</td><td>Yes (Fastly / LE)</td><td>More EU PoPs; on CF Pages one fewer hop</td><td><span class="tag t-neu">Marginal</span></td></tr>
+    <tr><td>WAF / DDoS / redirects / hide-origin</td><td class="crs">None</td><td>Free</td><td><span class="tag t-neu">Nice</span></td></tr>
+  </table>
+  <div class="grid g2">
+    <div class="box"><h4>Why this kills the ticker's weakness</h4><p>The "someone in München just bought" ticker no longer needs the rate-limited <code>ipwho.is</code>/<code>geojs</code> APIs. A free CF Worker reads the visitor's country/city at the edge and hands it to the page — no rate limit, no third-party dependency, faster.</p></div>
+    <div class="box"><h4>Why CF Pages over GitHub Pages</h4><p><b>Private repo allowed</b> (GitHub free Pages forces public), built-in geo <b>Functions</b> (no separate Worker), <b>unlimited bandwidth</b>, lowest EU TTFB, same git-push workflow you already use for GLPure/NeuroVitol.</p></div>
+  </div>
+  <div class="callout warn"><b>The one trap:</b> set SSL mode to <b>Full</b> (never <b>Flexible</b>). Flexible makes CF↔origin run over HTTP:80; GitHub answers HTTP with a 301→HTTPS, CF forwards it, the browser re-requests… → <b>infinite redirect loop</b>. Full fixes it. (On CF Pages this trap doesn't exist at all.)</div>
+</section>
+
+<!-- 02 -->
+<section id="setup">
+  <h2><span class="num">02</span>Exact setup (do today)</h2>
+  <p>Whichever host, the geo logic is the same. Two paths — pick one:</p>
+  <h3>Path A — Cloudflare Pages (recommended)</h3>
+  <ol>
+    <li>Add <code>trycoolizi.com</code> to Cloudflare → copy the 2 nameservers into your registrar → wait for "Active".</li>
+    <li>Workers &amp; Pages → Create → Pages → <b>Connect to GitHub</b> → pick the repo → Framework "None", output = repo root.</li>
+    <li>Add <b>Custom domain</b> <code>trycoolizi.com</code> in the Pages project (CF auto-creates the proxied DNS + cert).</li>
+    <li>SSL/TLS → <b>Full</b>; Always Use HTTPS = ON.</li>
+    <li>Drop in two Functions (below). Point the ticker at <code>/geo</code>; delete the IP-API calls.</li>
+  </ol>
+  <pre><code>// functions/geo.js  — visitor country/city for the ticker (free, no rate limit)
+export function onRequest({ request }) {
+  const cf = request.cf || {};
+  return Response.json(
+    { country:(cf.country||'XX').toUpperCase(), city:cf.city||null, region:cf.region||null },
+    { headers:{ 'cache-control':'no-store' } });   // never cache per-country
+}
+
+// functions/index.js — edge geo-routing: send each visitor to their language page
+const GEO = { GB:'/en', DE:'/de', AT:'/de', CH:'/de', FR:'/fr', BE:'/fr',
+              IT:'/it', ES:'/es', NL:'/nl', PT:'/pt', GR:'/el' };
+export function onRequest({ request }) {
+  const cc = (request.cf?.country || request.headers.get('CF-IPCountry') || 'XX').toUpperCase();
+  const url = new URL(request.url);
+  return Response.redirect(url.origin + (GEO[cc] || '/en') + url.search, 302); // 302, root only
+}</code></pre>
+  <h3>Path B — GitHub Pages behind Cloudflare proxy</h3>
+  <p>Set these DNS records in Cloudflare (DNS-only first, then flip to Proxied after GitHub issues its cert):</p>
+  <table>
+    <tr><th>Type</th><th>Name</th><th>Value</th></tr>
+    <tr><td>A ×4</td><td><code>@</code></td><td><code>185.199.108.153</code> · <code>.109.153</code> · <code>.110.153</code> · <code>.111.153</code></td></tr>
+    <tr><td>AAAA ×4</td><td><code>@</code></td><td><code>2606:50c0:8000::153</code> … <code>:8003::153</code></td></tr>
+    <tr><td>CNAME</td><td><code>www</code></td><td><code>&lt;user&gt;.github.io</code></td></tr>
+  </table>
+  <p style="font-size:14px;color:var(--mut)">Order: records DNS-only → set custom domain in repo Pages settings (writes the <code>CNAME</code> file) → wait for cert + tick Enforce HTTPS → flip A/AAAA to Proxied → SSL <b>Full</b> → deploy the same logic as a Worker bound to <code>/</code> and <code>/geo</code>.</p>
+  <div class="callout"><b>SEO guardrails (don't skip):</b> redirect <b>only the bare <code>/</code></b> with a 302 — never the <code>/de</code>, <code>/fr</code>… URLs (each must stay independently crawlable). Add reciprocal <code>hreflang</code> + <code>x-default → /en</code> on every page and submit the sitemap. Googlebot crawls from US, lands on <code>/</code>→<code>/en</code>, and still reaches every geo page via the sitemap/hreflang. <b>Leave Bot Fight Mode default</b> (verified Googlebot is excluded) and do <b>not</b> enable "Under Attack" / Browser Integrity Check on the LP — it would challenge real EU mobile buyers.</div>
+</section>
+
+<!-- 03 -->
+<section id="economics">
+  <h2><span class="num">03</span>The economics — this is the real gate, not SEO</h2>
+  <div class="kpi">
+    <div class="k"><b>$5,300/day</b><span>revenue at 50 conv × $106 blended</span></div>
+    <div class="k"><b>2,500–5,000</b><span>LP clicks/day needed (2%→1% CR)</span></div>
+    <div class="k"><b>$1.06–$2.12</b><span>max CPC you can pay (1%→2% CR)</span></div>
+    <div class="k"><b>0.5–1.5%</b><span>realistic cold CR on a €500 cart</span></div>
+  </div>
+  <h3>The traffic wall</h3>
+  <p>Conversion fires only on a <b>2× €249.98 = €499.96 (~$540) purchase</b>. That's a steep impulse buy, so cold conversion sits low. To land 50 sales/day:</p>
+  <table>
+    <tr><th>LP→sale CR</th><th>Clicks/day for 50 conv</th><th>Clicks/month</th><th>Reality</th></tr>
+    <tr><td>1%</td><td><b>5,000</b></td><td>150,000</td><td>Cold paid-social range</td></tr>
+    <tr><td>2%</td><td><b>2,500</b></td><td>75,000</td><td>Only with a tuned advertorial LP</td></tr>
+    <tr><td>3%</td><td>1,667</td><td>50,000</td><td>Search-intent ceiling, rare on cold</td></tr>
+  </table>
+  <p style="color:var(--mut);font-size:14px">A brand-new domain cannot SEO its way to 2,500+ qualified clicks/day this summer. → <b>Paid leads from day 1.</b></p>
+  <h3>Breakeven by channel (blended $106 payout)</h3>
+  <table>
+    <tr><th>Channel</th><th>Typ. EU CPC</th><th>Realistic CR</th><th>Profit/click</th><th>Verdict</th></tr>
+    <tr><td>Google Search</td><td>$0.60</td><td>2.5%</td><td class="chk">+$2.05</td><td><span class="tag t-good">Best margin, volume-capped</span></td></tr>
+    <tr><td>Native (Taboola/MGID)</td><td>$0.40</td><td>0.7%</td><td class="chk">+$0.34</td><td><span class="tag t-good">Workhorse — scales</span></td></tr>
+    <tr><td>TikTok</td><td>$0.70</td><td>0.9%</td><td class="chk">+$0.25</td><td><span class="tag t-warn">OK with UGC video</span></td></tr>
+    <tr><td>Meta / Facebook</td><td>$1.20</td><td>1.2%</td><td>+$0.07</td><td><span class="tag t-bad">Underwater below ~1.2% CR</span></td></tr>
+  </table>
+  <div class="callout warn"><b>CR is the whole game, not the channel.</b> Lifting CR from 1%→2% halves the clicks needed, halves spend, and flips Meta from a loss to ~1.8× ROAS. That single fact is the entire justification for building bespoke localized advertorial pages instead of pointing ads at a generic store. <b>And budget on net payout</b> — after refund/chargeback scrub (see §07), gross $105 nets ~$65–70, which is the number every kill/scale gate must use.</div>
+</section>
+
+<!-- 04 -->
+<section id="geo">
+  <h2><span class="num">04</span>Which geos to fund first (data beats convenience)</h2>
+  <p class="lead">Attractiveness = payout × demand × heat × low-AC-penetration × cheap clicks. One German page serves DE+AT+CH; one French page serves FR+BE.</p>
+  <table>
+    <tr><th>Build (1 page)</th><th>Covers</th><th>Why</th><th>Priority</th></tr>
+    <tr><td>🇪🇸 Spanish</td><td>ES</td><td>Cheapest clicks ($0.85) + hottest market (46°C). Best raw click economics.</td><td><span class="tag t-good">TIER 1 · #1</span></td></tr>
+    <tr><td>🇩🇪 German</td><td>DE·AT·CH</td><td>One build → ~100M people, near-zero home-AC, high purchasing power.</td><td><span class="tag t-good">TIER 1 · #2</span></td></tr>
+    <tr><td>🇫🇷 French</td><td>FR·BE</td><td>One build → ~80M, France set national heat records, mid CPC.</td><td><span class="tag t-good">TIER 1 · #3</span></td></tr>
+    <tr><td>🇬🇧 English</td><td>UK</td><td>Pays most ($115) + easiest creative, BUT highest CPC ($1.95) + EUR-cart-for-GBP friction → needs ≥1.5% CR. Launch on Native/Search before Meta.</td><td><span class="tag t-warn">TIER 1 · #4 (watch CR)</span></td></tr>
+    <tr><td>🇮🇹 Italian</td><td>IT</td><td>Extreme heat + cheap clicks, tempered by higher AC penetration.</td><td><span class="tag t-neu">TIER 2</span></td></tr>
+    <tr><td>🇳🇱 / 🇵🇹</td><td>NL · PT</td><td>Cheap, low penetration, but smaller markets.</td><td><span class="tag t-neu">TIER 3</span></td></tr>
+    <tr><td>🇬🇷 Greek</td><td>GR</td><td>Near-universal AC ownership = weak product-fit. Smallest payback.</td><td><span class="tag t-bad">SKIP a bespoke build</span></td></tr>
+  </table>
+  <div class="callout"><b>Build order:</b> ES → DE → FR → UK → IT. Four pages (ES/DE/FR/EN) already cover <b>7 of 11 country-markets</b> and all of Tier 1. We still build all 8 (you have live links for each), but fund in this order. <span class="tag t-warn">Note</span> this <i>reverses</i> the first-draft "lead with UK because English is easy" — the data says lead with ES/DE/FR; UK's economics need a proven CR first.</div>
+</section>
+
+<!-- 05 -->
+<section id="channels">
+  <h2><span class="num">05</span>Traffic channels &amp; the one rule that prevents bans</h2>
+  <table>
+    <tr><th>Channel</th><th>Fit</th><th>Ban / policy reality</th><th>Rating</th></tr>
+    <tr><td><b>Native</b> (Taboola/Outbrain/MGID/RevContent)</td><td>Excellent — the home of cooler review-funnels</td><td>Advertorial allowed if labelled "Sponsored", no fake before/after. MGID/RevContent most permissive to start; Taboola/Outbrain to scale.</td><td><span class="tag t-good">GO — foundation</span></td></tr>
+    <tr><td><b>Meta</b> FB/IG (compliant UGC)</td><td>Highest volume ceiling</td><td>Real-time crawls ad↔LP↔checkout for mismatch; "air conditioner" + room-cooling claims = strike; cloaking = permanent ban in hours. Budget aged accounts as a cost.</td><td><span class="tag t-warn">CAUTION — scale lever</span></td></tr>
+    <tr><td><b>TikTok organic</b> (Reels too)</td><td>Heat-wave gadget virality</td><td>Cheap top-funnel; disclose #ad; EU outbound-link friction = awareness not closing.</td><td><span class="tag t-good">GO (organic)</span></td></tr>
+    <tr><td><b>Google Search</b></td><td>Brand + "review/scam" intent only</td><td>Misrepresentation policy suspends on detection, no warning. Needs real business identity + affiliate disclosure. Intent-capture, not volume.</td><td><span class="tag t-warn">CAUTION — defensive</span></td></tr>
+    <tr><td>Display/Discovery · Push/Pop · Email (cold)</td><td>Weak / junk</td><td>Low intent, GDPR/ePrivacy exposure, poor ROI at our payout.</td><td><span class="tag t-bad">AVOID</span></td></tr>
+  </table>
+  <div class="callout bad"><b>The single account-killer in 2026:</b> ad ↔ landing-page mismatch + the literal phrase "air conditioner". Platforms crawl your destination in real time. <b>Our entire edge is that the review LP is genuinely the page both the bot and the user see</b>, and it calls Coolizi a <i>personal / evaporative cooler</i> — never a real AC. No cloaking; there is no compliant cloak.</div>
+  <div class="callout warn"><b>EU Omnibus — wire this into the build, not just the copy:</b> fabricated named-purchase tickers and resetting countdowns are exactly what's being fined (Amazon €7.48M; ASA ruled against countdown timers Oct 2025). Safer same-feel version: a <b>truthful session timer</b> + a <b>non-attributed "people viewing from &lt;country&gt; now"</b> ticker driven by real edge-geo signals, instead of invented "Lukas bought 2×" lines. Same FOMO, defensible. (Your call on the dial — see §08.)</div>
+</section>
+
+<!-- 06 -->
+<section id="plan">
+  <h2><span class="num">06</span>The plan ahead — 4 phases, dated</h2>
+  <p class="lead">Day 0 = today (Thu 26 Jun), peak heat-dome. Every day of delay burns peak inventory. Build fast, launch paid in week 1.</p>
+  <table>
+    <tr><th>Phase</th><th>Window</th><th>Objective</th><th>Gate to advance</th></tr>
+    <tr><td><b>P0 Build</b></td><td>Day 0–2<br>(26→28 Jun)</td><td>8 localized pages from a build.py generator + tracking (click-time link, s1/gclid) + AEO; functional-test every interactive element.</td><td>All pages render; CTA→valid <code>bikiraibn.com?a=2397&c=…&s1=</code>→checkout; ticker shows a local city; 0 console errors.</td></tr>
+    <tr><td><b>P1 Live + index</b></td><td>Day 2–5<br>(28 Jun→1 Jul)</td><td>Go live on CF Pages; GSC/Bing verify; URL-inspect all 8; postback receiver; tiny Native smoke test (ES/DE/FR).</td><td>≥6/8 indexed; postback round-trips s1; smoke test reads a real CR signal.</td></tr>
+    <tr><td><b>P2 Paid ramp</b></td><td>Wk 1–3<br>(2→22 Jul)</td><td>Find profitable geo×source×creative combos. Native first → Meta as scale lever once a geo proves ≥1.5% CR. Full tracker (RedTrack/Voluum) + platform CAPI before scaling.</td><td>≥2 combos at <b>net</b> CPA &lt; ~€65–70 AND ≥12 conv/day.</td></tr>
+    <tr><td><b>P3 Scale</b></td><td>Wk 3–6<br>(22 Jul→early Aug)</td><td>A/B the hero/bundle/ticker to lift CR; kill losers; pour budget into winners; add IT/ES; ride peak August heat.</td><td><b>50/day held ≥3 days at net CPA &lt; €75.</b></td></tr>
+    <tr><td><b>P4 Defend</b></td><td>ongoing</td><td>Harvest maturing organic + brand-defense terms; launch NL/PT/GR; prep a shoulder-season angle before the late-Aug heat taper.</td><td>Hold the profitable core; pull paid as heat fades.</td></tr>
+  </table>
+  <h3>Realistic conversion trajectory (paid-led, contingent on a profitable combo existing)</h3>
+  <table>
+    <tr><th>Days</th><th>Conv/day</th><th>Note</th></tr>
+    <tr><td>1–7 (build + smoke)</td><td>0–2</td><td>Proof-of-funnel only — don't read positive CR yet</td></tr>
+    <tr><td>8–14 (Native ES/DE/FR)</td><td>2–6</td><td>Exiting learning on 2–3 cells</td></tr>
+    <tr><td>15–21 (+ Meta if a geo proved)</td><td>5–12</td><td>Meta volatile; expect ≥1 account loss</td></tr>
+    <tr><td>22–30 (scale winners)</td><td>8–20</td><td>If ≥1 combo is net-profitable; 0–5 if not</td></tr>
+    <tr><td><b>~Day 45–60</b></td><td><b>50</b></td><td>Mid-to-late August — overlaps the heat taper, so be <i>scaled</i> by early Aug</td></tr>
+  </table>
+  <p style="color:var(--mut);font-size:14px">Measurement (it's CPA, network-side, so we never see the sale directly): our click ledger stamps <code>s1={source}-{geo}-{uuid}</code> → the network postback fires to a CF Worker (organic ledger) + RedTrack/Voluum (paid, which feeds Meta CAPI / TikTok EAPI) → reconcile daily against the network dashboard payout. Same Ringba↔Google discipline as RingOnDemand.</p>
+</section>
+
+<!-- 07 -->
+<section id="redteam">
+  <h2><span class="num">07</span>Red-team: the 3 things that quietly kill this launch</h2>
+  <p class="lead">A skeptical performance-marketing director red-teamed the whole plan. These are the corrections that matter — none were in the first draft.</p>
+  <div class="grid" style="gap:14px">
+    <div class="box" style="border-color:rgba(255,93,108,.3)"><h4><span class="num-big">1</span>Cash-flow float is the real scale ceiling</h4>
+      <p style="color:#cdd8e6">You front 100% of ad spend daily; the network pays <b>net-15/net-30</b> (+ a hold for a new affiliate on a refund-prone offer). At 50/day you're floating <b>~$60k–120k of working capital</b> before the first payment lands. The plan can be perfect and still stall here. <b>Confirm pay frequency + secure ~$50–100k float (or weekly pay + credit line) Day 0.</b></p></div>
+    <div class="box" style="border-color:rgba(255,93,108,.3)"><h4><span class="num-big">2</span>Refund/chargeback scrub is 30–50%, not 15–25%</h4>
+      <p style="color:#cdd8e6">A $540 impulse "AC" with split legit/scam reviews, shipped in 1–3 weeks, arrives <i>after</i> the heatwave panic → remorse, refunds, chargebacks. At 35% scrub, gross $105 nets <b>~$68</b>, break-even CPA drops to ~€68, and Meta/TikTok go underwater. <b>Every kill/scale gate must run on net payout.</b> Get ship time + refund/hold policy in writing.</p></div>
+    <div class="box" style="border-color:rgba(255,93,108,.3)"><h4><span class="num-big">3</span>Time-to-50/day was over-promised</h4>
+      <p style="color:#cdd8e6">Native Smart Bid needs <b>50+ conv per campaign</b> to exit learning — ~5,000–10,000 clicks (~$2–4k) <i>per cell</i> just to know if it's profitable. You can't run that across multiple geos×channels and hit a <i>stable</i> 50/day in 5 weeks. Realistic: <b>day 45–60</b>, and it overlaps the heat taper. Commit the test budget up front so you're scaled by early August.</p></div>
+  </div>
+  <h3>Also missing from the first draft (now folded into the plan)</h3>
+  <div class="grid g2">
+    <div class="box"><h4>Minimum test budget</h4><p><b>$6k–10k</b> across 4–5 cells ($1,500–2,000/cell = ~2,500–3,000 clicks each, enough to <i>confirm</i> a winner, not just kill). A $150 smoke test can only kill, never confirm.</p></div>
+    <div class="box"><h4>Creative + ad-account contingency</h4><p>Meta/TikTok need real UGC video — and we have no physical unit to film. Budget $100–300×3–5 UGC + $200–500/aged Meta account <i>before</i> Meta, not after the first ban.</p></div>
+    <div class="box"><h4>EU legal stack</h4><p>German <b>Impressum</b> is legally mandatory; GA4 without consent = GDPR breach. Fix: add Impressum + privacy policy, go <b>cookieless</b> (CF Web Analytics, drop GA4), and bake Omnibus-safe timer/ticker into <code>build.py</code>.</p></div>
+    <div class="box"><h4>Platform CAPI, not just network postback</h4><p>Meta optimizes on CAPI fired with <code>fbclid</code>, not the network postback. Confirm the network actually <b>returns our click-id</b> — many pass only one sub-id; if it drops <code>fbclid</code>, Meta optimization is blind.</p></div>
+  </div>
+  <div class="callout"><b>Highest-leverage single variable:</b> ask the network whether CPA also pays on a <b>1× €249 single unit</b>, not only the 2× bundle. A single-unit path could ~2× CR and flip Meta profitable. Push hard on this before we build.</div>
+</section>
+
+<!-- 08 -->
+<section id="decisions" class="decision">
+  <h2><span class="num">08</span>Decisions I need from you to start Day 0</h2>
+  <p class="lead">Answer these and I build immediately. The first two are hard go/no-go gates.</p>
+  <ol>
+    <li><b>Network terms (blocking):</b> get in writing — payout on <b>single unit vs 2× bundle</b>; <b>pay frequency + hold/scrub %</b>; <b>ship time + refund policy</b>. These four numbers decide if the plan is viable.</li>
+    <li><b>Working-capital float (blocking):</b> can Boba float ~$50–100k of spend before net-30 pay, or get weekly pay + a credit line?</li>
+    <li><b>Host:</b> Cloudflare Pages (private repo, recommended) or GitHub Pages + CF proxy?</li>
+    <li><b>Channels + budget:</b> Native is the non-negotiable first mover. Meta yes/no on policy appetite? Confirm the $6–10k test budget.</li>
+    <li><b>Tracker:</b> RedTrack vs Voluum — I'll wire whichever (needed before paid scale).</li>
+    <li><b>GSC/Bing:</b> you verify with your Google login, or add me as delegate.</li>
+    <li><b>Aggression dial:</b> Omnibus-safe ticker/timer (my rec) vs the fabricated "X just bought" version. Your call.</li>
+    <li><b>PR-wire crawl trigger:</b> go/no-go on a cheap big-domain mention per geo (brand-SERP + crawl, no-follow fine).</li>
+  </ol>
+  <div class="callout"><b>What I do the moment you say "build it":</b> generate the 8 localized pages (ES/DE/FR/EN first) via a build.py generator + geo-data JSON, wire config.js click-time link + s1/gclid capture, the CF geo Functions + edge ticker, the Omnibus-safe FOMO stack, schema/AEO + Impressum/privacy, then functional-test every interactive element before anything ships.</div>
+</section>
+
+<div class="foot">Coolizi EU Launch Dossier · prepared 26 Jun 2026 · confidential · noindex · 5-agent workflow + red-team verified · deep research: <a href="case-study.html">case-study.html</a></div>
+</main>
+</div>
+</body>
+</html>
